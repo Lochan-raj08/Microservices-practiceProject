@@ -1,0 +1,7 @@
+1607347038442	Rename package 'com.atom.user'
+1607347089557	Rename package 'com.atom.user.controller'
+1607347101877	Rename package 'com.atom.user.entity'
+1607347114315	Rename package 'com.atom.user.repo'
+1607347124984	Rename package 'com.atom.user.service'
+1607347141636	Rename package 'com.atom.user.vo'
+1607350860568	Rename type 'UserRepo'

@@ -1,0 +1,27 @@
+package com.practice.department.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.practice.department.entity.Department;
+import com.practice.department.repo.DepartmentRepo;
+import com.practice.department.repo.DepartmentRepository;
+
+@Service
+public class DepartmentService {
+	
+	@Autowired
+	private DepartmentRepository departmentRepository;
+
+	public Department saveDepartment(Department department) {
+		
+		System.out.println("Inside saveDepartment service");
+		return departmentRepository.save(department);
+	}
+
+	public Department findDepartmentById(Long dId) {
+		System.out.println("Inside findDepartmentById controller");
+		return departmentRepository.findBydId(dId);
+	}
+}

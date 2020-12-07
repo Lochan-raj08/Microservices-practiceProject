@@ -1,0 +1,23 @@
+#port random
+server:
+  port: 9295
+  
+spring:
+  application:
+    name: HYSTRIX-DASHBOARD
+    
+#hystrix dashboard config
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"    
+
+#removing these after adding into bootstrap.yml
+##Eureka
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
